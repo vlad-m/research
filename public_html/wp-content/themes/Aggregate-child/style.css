@@ -412,17 +412,17 @@ ul#secondary-menu {
     text-decoration: none;
     color: #48423f;
 }
-.block-post 	p.meta-info {
+.block-post p.meta-info {
     margin-top: -4px;
     text-align: justify;
     color: #b8c2c2;
     text-shadow: 1px 1px 1px #ffffff;
 }
-.block-post 	p.meta-info a {
+.block-post p.meta-info a {
     text-decoration: none;
     color: #8c9c9c;
 }
-.block-post 	p.meta-info a:hover {
+.block-post p.meta-info a:hover {
     color: #444c4c;
 }
 a.more {
@@ -1588,18 +1588,45 @@ a#cancel-comment-reply-link {
     float: right;
 }
 
+
 /*------------------------------------------------*/
-/*--------------------[VLAD CUSTOM STYLES]-------------------*/
+/*--------------[VLAD CUSTOM STYLES]--------------*/
 /*------------------------------------------------*/
 #top-header .container {
     width: 1124px;
     min-width: 1124px;
     margin: 0 auto;
 }
+
 form.custom_search_custom_fields__search {
     padding: 0 !important;
 }
 .cit {
     width: 100%;
     height: auto;
+}
+
+/*------------------------------------------------*/
+/*-------------------[YANDEX PAY]------------------*/
+/*------------------------------------------------*/
+.yandex-pay {
+    text-align: center;
+}
+@media only screen and ( max-width: 767px ) {
+    .yandex-pay {
+        text-align: center;
+        margin: 0 -25px;
+    }
+}
+@media only screen and ( max-width: 580px ) {
+    .yandex-pay {
+        -webkit-transform: scale(0.65);
+        -moz-transform: scale(0.65);
+        -ms-transform: scale(0.65);
+        transform: scale(0.65);
+        -webkit-transform-origin: 0;
+        -moz-transform-origin: 0;
+        -ms-transform-origin: 0;
+        transform-origin: 0;
+    }
 }
