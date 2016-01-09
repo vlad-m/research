@@ -229,9 +229,12 @@ img#about-image {
 }
 .container {
     position: relative;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     text-align: justify;
+}
+#ie8 .container {
+    width: 960px;
 }
 #content {
     margin-bottom: 39px;
@@ -244,7 +247,7 @@ ul#top-menu {
     float: left;
     width: 167px;
     height: 27px;
-    margin: 11px 0 0 7px;
+    margin: 11px 0 11px 7px;
     background: url(images/search-bg.png) no-repeat;
 }
 #search-form #searchinput {
@@ -1089,12 +1092,13 @@ h3#reply-title {
 }
 p#copyright {
     float: right;
-    width: 235px;
-    padding: 7px 0 0;
+    width: 245px;
+    padding: 15px 0 15px;
     color: #afa59f;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
     font-size: 11px;
     line-height: 14px;
+    text-align: center;
 }
 p#copyright a {
     color: #ffffff;
@@ -1593,11 +1597,12 @@ a#cancel-comment-reply-link {
 /*--------------[VLAD CUSTOM STYLES]--------------*/
 /*------------------------------------------------*/
 #top-header .container {
-    width: 1124px;
-    min-width: 1124px;
-    margin: 0 auto;
+    width: auto;
+    max-width: 1124px;
 }
-
+#ie8 #top-header .container {
+    width: 1124px;
+}
 form.custom_search_custom_fields__search {
     padding: 0 !important;
 }
